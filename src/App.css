@@ -31,9 +31,6 @@ img {
 .cardContent {
  background-color: #C4DDFF;
 }
-.cardorigin{
-background-color: #C4DDFF;
-}
 .cardFooter {
   background-color: #7FB5FF;
 }
@@ -43,7 +40,6 @@ background-color: #C4DDFF;
   transition: 0.5s;
   width: 300px;
   border-radius: 5px;
-  /* margin: 400px; */
   margin-left: 500px;
   margin-top: 500px;
   margin: 300px;
@@ -62,18 +58,36 @@ background-color: #C4DDFF;
   background-color: black;opacity: 0.7;
   position: fixed;
   margin-left: 320px;
+  
 }
 
-/* .box {
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
-  height: auto;
-  max-height: 70vh;
-  margin-top: calc(100vh - 85vh - 20px);
-  background: #fff;
-  border-radius: 4px;
-  padding: 20px;
-  border: 1px solid #999;
-  overflow: auto;
+.hidden{
+  /* right: 1px; */
+  color:transparent;
+  display: none;       
+}
+.popupheaderhidden{
+  color: white;
+}
+
+.popupbodyhidden{
+  color: white;
+
+}.popupfooterhidden{
+  color: white;
+}
+
+.containerhidden{
+ 
+ position: absolute;
+
+ left: 20px;
+ opacity: 0.1;
+  
+}
+
+/* .imghidden {
+ color: white;
+ img
 } */
+

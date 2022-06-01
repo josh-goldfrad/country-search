@@ -15,7 +15,7 @@ const{setInputVal}=useContext(SupremeContext)
       <h3>number of countries:{filterd.length}</h3>
       <input type="text" onChange={() => {setInputVal(window.event.target.value)}}></input>
 
-      <CountrySelect setFilterWithApi={setFilterWithApi}></CountrySelect>
+      {/* <CountrySelect setFilterWithApi={setFilterWithApi}></CountrySelect> */}
 
     </>
   );

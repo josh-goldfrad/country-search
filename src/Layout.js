@@ -1,4 +1,4 @@
-import Main from "./ContextChildren/Main";
+// import Main from "./ContextChildren/Main";
 import Header from "./ContextChildren/Header";
 import { createContext, useEffect, useState } from "react";
 import CountryList from "./CountryList"
@@ -35,11 +35,11 @@ function Layout(props) {
   }, [])
 
   useEffect(()=>{
-    console.log(filterWithApi);
+    // console.log(filterWithApi);
   },[filterWithApi])
   useEffect(() => {
-    setFilterd(Countries.filter((country) => country.name.common.toLowerCase().startsWith(inputVal)))
-    console.log(inputVal);
+    setFilterd(Countries.filter((country) => country.name.common.toLowerCase().includes(inputVal)))
+    // console.log(inputVal);
   }, [inputVal,CountrySelect])
 
   useEffect(()=>{
@@ -55,7 +55,9 @@ function Layout(props) {
 <    SupremeContext.Provider value={{filterd,setInputVal,inputVal,setFilterd,Countries,setFilterWithApi}}>
       <Header setInputVal={setInputVal} Countries={Countries} setFilterd={setFilterd}setFilterWithApi={setFilterWithApi}>
       </Header>
-      <CountryList Countries={Countries} filterd={filterd} setPopUp_pick={setPopUp_pick} >
+      <CountryList  Countries={Countries} filterd={filterd} setPopUp_pick={setPopUp_pick} pick={props.pick}>
+      {/* // togglePopup={props.togglePopup} */}
+       
       
       </CountryList >
       </SupremeContext.Provider>
