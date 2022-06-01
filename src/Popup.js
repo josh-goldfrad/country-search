@@ -23,10 +23,14 @@ export default function Popup(props) {
     >
       <div className={"popup"+hide}>
         <span className="close-icon" >x</span>
-        <h4 className={'popupheader'+hide}>name:{props.pick[4]}</h4>
+        <h3 className={'popupheader'+hide}>name:{props.pick[4]}</h3>
         <img className={'img'+hide} src={props.pick[1]} alt={props.pick[4]}></img>
-        <h4 className={'popupbody'+hide}>capital:{props.pick[0]}</h4>
-        <h4 className={'popupfooter'+hide}>population:{props.pick[2]}</h4>
+        <h3 className={'popupbody'+hide}>capital:{props.pick[0]}</h3>
+        <h3 className={'popupfooter'+hide}>population:{props.pick[2]}</h3>
+        <h3 className={'popupfooter'+hide}>total land area in km:{props.pick[5]}</h3>
+        <h3 className={'popupfooter'+hide}>is the country landlocked `("true" is yes)`:{props.pick[7]}</h3>
+        <h3 className={'popupfooter'+hide}>continent:{props.pick[6]}</h3>
+
 
 
       </div>

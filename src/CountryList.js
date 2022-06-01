@@ -8,7 +8,7 @@ export default function CountryList(props) {
     return props.filterd.map((item) => {
         return (
             <div className='country' onClick={() => {
-                props.setPopUp_pick([item.capital, item.flags.png, item.population, item.languages, item.name.common]);
+                props.setPopUp_pick([item.capital, item.flags.png, item.population, item.languages, item.name.common,item.area,item.continents,item.landlocked ]);
 
             }
             }>
