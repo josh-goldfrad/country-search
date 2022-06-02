@@ -82,7 +82,6 @@ img {
 .containerhidden{
  z-index: -1;
  position: absolute;
-
  left: 20px;
  opacity: 0.1;
   

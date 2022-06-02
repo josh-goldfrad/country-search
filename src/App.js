@@ -7,19 +7,10 @@ import Popup from "./Popup";
 
 function App() {
   const [pick, setPick] = useState([]);
-  
-
-  // const [isOpen, setIsOpen] = useState(false);
-
-  // const togglePopup = () => {
-  //   setIsOpen(!isOpen);
-  // }
-  return (
+    return (
     <>
       <Popup  pick={pick} setPick={setPick} />
-      <Layout  setPick={setPick} pick={pick}
-      // togglePopup={togglePopup}
-      >
+      <Layout  setPick={setPick} pick={pick}>
       </Layout>
     </>
   );

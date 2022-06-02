@@ -6,7 +6,6 @@ import { SupremeContext } from "../Layout";
 function Header(props) {
   const { filterd } = useContext(SupremeContext)
   const { setFilterd } = useContext(SupremeContext)
-  const { setFilterWithApi } = useContext(SupremeContext)
 const{setInputVal}=useContext(SupremeContext)
 
 
